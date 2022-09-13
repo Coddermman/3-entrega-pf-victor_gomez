@@ -9,16 +9,45 @@
 header{
     .logo{
         width: 30%;   
+     margin-top: 10px;
+        margin-left: 1%;
+        margin-bottom: 10px;
+    }
+    h1{
+        text-align: end;
+        margin: 30px;
     }
     nav{
         ul{
             a:hover{
-                background-color: rgb(255, 255, 255);
-                color: orangered;         
+                background-color: rgb(21, 192, 43);
+                       
                     }         
-        }
+        
+                }
+
     }
 }
+.ta1{
+    animation-name: tituloInicial2;
+    animation-duration:9s;
+    animation-iteration-count: 1 ;
+    text-align: center;
+    
+}
+@keyframes tituloInicial2{
+    from{
+        transform: translateY(-100px);
+        width:2fr;
+        color: white; 
+
+    }
+
+    to{
+        transform: translateY(0);
+    } 
+}
+
 /*animación del logo */
 .logo{
     animation-name: logo;
@@ -35,6 +64,7 @@ header{
         }
         to{
             transform: translateX(0);
+           opacity: 10%;
         }
 }
 .negrita{
@@ -42,7 +72,12 @@ header{
     color: white;
 }
 .color_header{
-    background-color: khaki;
+    background-image: url("../imagenes/header1.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    background-color: rgb(162, 140, 240);
+   
 }
 
 .bg_section{
