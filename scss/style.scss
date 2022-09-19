@@ -4,7 +4,9 @@
     font-family: sans-serif
 
 }
+
 @import url('https://fonts.googleapis.com/css2? family= Istok+Web:ital,wght@0,400;0,700;1,700 & display=swap');
+@import"variables";
 
 header{
     .logo{
@@ -16,11 +18,14 @@ header{
     h1{
         text-align: end;
         margin: 30px;
+        color:$h1color;
+        text-decoration: double;
     }
     nav{
+        background-color: $colorA;
         ul{
             a:hover{
-                background-color: rgb(21, 192, 43);
+                background-color: $color_resaltado;
                        
                     }         
         
@@ -82,25 +87,51 @@ header{
 
 .bg_section{
     background-image: url(../imagenes/ecografia-obstetrica-800x468.jpg);
-    background-position: center ;
-    width: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover ;
-        background-color: #464646;
-    object-fit: contain;
-    height: 100vh;
-    margin: 0;
-    padding: 0; 
+    
+    
 }
 .fotos{
     width: fit-content;
     height: auto;   
 }
+.foto1{
+    width: 40%;
+}
+.fotos2{
+    width: 100%;
+    
+}
 .margen{
     margin: 30px 20px;
-    padding: 25px;
+    
 }
+.margen2{
+    margin: 30px 25%;
+   
+}
+.margen3{
+    @extend .margen;
+    padding-left: 80px;
+    
+}
+.margen4{
+    margin: 40px 50px;
+    margin-top: 20px;
+    padding: 25px;
+    ul{
+    li:hover{
+            background-color: rgb(21, 192, 43);
+              color: white; 
+              font-weight: bolder;    
+                }         
+    
+            }
+        
+}
+.colorServicios{
+    background-color: $colorA
+}
+
 .margen_carrusel{
     position: relative;
     margin: 10px;
@@ -134,7 +165,7 @@ opacity: -100;
 .footer{
     display: flex;
     justify-content: space-evenly;
-    background-color: orangered;
+    background-color:$color_resaltado;
     width: 100%;
     height: auto;
     color: white;  
@@ -142,12 +173,12 @@ opacity: -100;
 .registro{
     width: 100%;
     display: flex;
-    margin: 20px;
+    margin:50px;
     justify-content: space-around;
 }
 .color{
-    background-color: orangered;
-    color: green;
+    background-color:$color_resaltado;
+    color: rgb(21, 192, 43);
 }
 .carrusel{
     height: 10px;
@@ -159,14 +190,36 @@ opacity: -100;
 .footer3{
     display: flex;
     justify-content: center;
+    
 }
 .box{
     width: 80%;
     height: 40vh;
-    border: solid 3px orangered;
+    border: solid 3px $color_resaltado;
     margin: 40px;
 }
 .prueba2{
     width: 100%;
     height: 60vh;
+}
+.color_footerCintillo{
+    background-color: $color_resaltado;
+}
+.imagenC{
+    width: 100%;
+    background-size:cover ;
+}
+.redesColor{
+    display: flex;
+    padding-left: 20px;
+    color:$h1color;
+    text-decoration: double;
+}
+.mantenimiento{
+    background-image: url("../imagenes/mantenimiento.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    background-color: rgb(162, 140, 240);
 }

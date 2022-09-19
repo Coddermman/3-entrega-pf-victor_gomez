@@ -6,6 +6,8 @@
   font-family: sans-serif;
 }
 
+/*********archivo de variables****/
+/*colores de la marca**/
 header .logo {
   width: 30%;
   margin-top: 10px;
@@ -15,9 +17,14 @@ header .logo {
 header h1 {
   text-align: end;
   margin: 30px;
+  color: rgb(17, 17, 126);
+  text-decoration: double;
+}
+header nav {
+  background-color: #309722;
 }
 header nav ul a:hover {
-  background-color: rgb(21, 192, 43);
+  background-color: rgb(231, 139, 18);
 }
 
 .ta1 {
@@ -68,16 +75,6 @@ header nav ul a:hover {
 
 .bg_section {
   background-image: url(../imagenes/ecografia-obstetrica-800x468.jpg);
-  background-position: center;
-  width: 100%;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-  object-fit: contain;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 .fotos {
@@ -85,9 +82,39 @@ header nav ul a:hover {
   height: auto;
 }
 
-.margen, .margen_centrado {
+.foto1 {
+  width: 40%;
+}
+
+.fotos2 {
+  width: 100%;
+}
+
+.margen, .margen_centrado, .margen3 {
   margin: 30px 20px;
+}
+
+.margen2 {
+  margin: 30px 25%;
+}
+
+.margen3 {
+  padding-left: 80px;
+}
+
+.margen4 {
+  margin: 40px 50px;
+  margin-top: 20px;
   padding: 25px;
+}
+.margen4 ul li:hover {
+  background-color: rgb(21, 192, 43);
+  color: white;
+  font-weight: bolder;
+}
+
+.colorServicios {
+  background-color: #309722;
 }
 
 .margen_carrusel {
@@ -124,7 +151,7 @@ header nav ul a:hover {
 .footer {
   display: flex;
   justify-content: space-evenly;
-  background-color: orangered;
+  background-color: rgb(231, 139, 18);
   width: 100%;
   height: auto;
   color: white;
@@ -133,13 +160,13 @@ header nav ul a:hover {
 .registro {
   width: 100%;
   display: flex;
-  margin: 20px;
+  margin: 50px;
   justify-content: space-around;
 }
 
 .color {
-  background-color: orangered;
-  color: green;
+  background-color: rgb(231, 139, 18);
+  color: rgb(21, 192, 43);
 }
 
 .carrusel {
@@ -159,13 +186,37 @@ header nav ul a:hover {
 .box {
   width: 80%;
   height: 40vh;
-  border: solid 3px orangered;
+  border: solid 3px rgb(231, 139, 18);
   margin: 40px;
 }
 
 .prueba2 {
   width: 100%;
   height: 60vh;
+}
+
+.color_footerCintillo {
+  background-color: rgb(231, 139, 18);
+}
+
+.imagenC {
+  width: 100%;
+  background-size: cover;
+}
+
+.redesColor {
+  display: flex;
+  padding-left: 20px;
+  color: rgb(17, 17, 126);
+  text-decoration: double;
+}
+
+.mantenimiento {
+  background-image: url("../imagenes/mantenimiento.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  background-color: rgb(162, 140, 240);
 }
 
 /*# sourceMappingURL=style.css.map */

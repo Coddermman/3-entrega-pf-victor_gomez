@@ -18,11 +18,11 @@
 			<img class="logo" src="../imagenes/logo.jpeg" alt="logo del Centro Profesional de Estudios Ecográficos & Asociados ">
 		</div>
 		<div>
-			<h1>Agendar Estudio</h1></div>
+			<h1 class="fw-bold" >Agendar Estudio</h1></div>
 		<!--barra de navegación-->
-		<nav class="navbar navbar-expand-lg" style="background-color:  #309722;">
+		<nav class="navbar navbar-expand-lg" >
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Menú</a>
+				<a class="navbar-brand" >Menú</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -41,13 +41,11 @@
 							<a class="nav-link negrita" href="../paginas/descarga-de-informe.html">Descargar Informe</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle negrita" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Perfil del Paciente
-                    </a>
+							<a class="nav-link dropdown-toggle negrita" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Perfil del Paciente</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="../paginas/crear-perfil.html">Crear Perfil</a></li>
-								<li><a class="dropdown-item" href="../paginas/crear-perfil.html">Paciente Registrado</a></li>
-								<li><a class="dropdown-item" href="../paginas/crear-perfil.html">Cambiar de Perfil</a></li>
+								<li><a class="dropdown-item" href="../paginas/crear-perfil.html #tucuenta">Paciente Registrado</a></li>
+								<li><a class="dropdown-item" href="../paginas/crear-perfil.html #tucuenta">Cambiar de Perfil</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -56,114 +54,162 @@
 		</nav>
 		<!-- fin de barra de navegación-->
 	</header>
-	<main>
-		<div class="margen_centrado">
-			<form class="row g-3">
-
-				<div class="col-md-6">
-					<input type="text" class="form-control" placeholder="Nombres" aria-label="First name">
-				</div>
-				<div class="col-md-6">
-					<input type="text" class="form-control" placeholder="Apellidos" aria-label="Last name">
-				</div>
-				<!--los selectores-->
-				<div class="col-md-6">
-					<div class="dropdown">
-						<button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        tipo de Servicio
-      </button>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Convencional</a></li>
-							<li><a class="dropdown-item" href="#">Especializado</a></li>
-							<li><a class="dropdown-item" href="#">otros</a></li>
-						</ul>
-					</div>
-				</div>
-				<!--otro selector-->
-				<div class="dropdown">
-					<div class="col-md-4">
-						<label for="validationCustom03" class="form-label">Fecha</label>
-						<input type="date" class="form-control" id="validationCustom03" required>
-						<div class="invalid-feedback">
+<main>
+		<h2 class="class= fw-bold margen">Seleccione el tipo de estudio que necesita:</h2>
+<!--lista de servicios-->
+		<div class="margen3 ">
+		<p>
+		<a class="btn btn-success margen colorServicios " data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Convencionales</a>
+		<button class="btn btn-success margen colorServicios" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Especializados</button>
+		</p>
+		<div class="row">
+		<div class="col ">
+		<div class="collapse multi-collapse" id="multiCollapseExample1">
+		<div class="card card-body">
+					<!--lista de servicios convencionales-->
+		<select class="form-select " aria-label="Default select example">
+			<option selected>Despliegue el Menú</option>
+			<option value="1">Abdominal</option>
+			<option value="2">Pelvico</option>
+			<option value="3">Mamario</option>
+			<option value="4">Renal</option>
+			<option value="5">Prostático</option>
+			<option value="6">Tiroidéo</option>
+			<option value="7">Transvaginal</option>
+			<option value="8">Partes Blandas</option>
+ 		</select>
+		</div>
+		</div>
+		</div>
+	<!--lista de servicios especializados-->
+	<div class="col">
+	<div class="collapse multi-collapse" id="multiCollapseExample2">
+	<div class="card card-body">
+	<select class="form-select" aria-label="Default select example">
+		<option selected>Despliegue el menú</option>
+		<option value="1">Transfontanelar</option>
+		<option value="2">Músculo-esquelético</option>
+		<option value="3">Transrectal</option>
+		<option value="4">Articulaciones</option>
+		<option value="5">Doppler Renal</option>
+		<option value="6">Testicular</option>
+		<option value="7">Ecografía Ocular</option>
+		<option value="8">Boyden Ecográfico</option>
+		<option value="9">Elastografía Abdominal</option>
+		<option value="10">Barrido Extendido</option>
+  	</select>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<!--fin de la lista de servicios-->
+<!--ingreso de datos -->
+<h3 class="fw-bold margen">ingrese sus datos:</h3>
+<div class="margen3">
+	<form class="row g-3">
+	<div class="col-md-4">
+	<input type="text" class="form-control" placeholder="Nombres" aria-label="First name">
+	</div>
+	<div class="col-md-4">
+	<input type="text" class="form-control" placeholder="Apellidos" aria-label="Last name">
+	</div>
+</div>		
+		<!--otro selector-->
+	<div class="dropdown margen3 row g-3">
+		<div class="col-md-4">
+			<label for="inputZip" class="form-label">Cédula de Identidad/Rut/DNI</label>
+			<input type="text" class="form-control" id="inputZip">
+		</div>
+		<div class="col-md-4">
+			<label for="inputEmail4" class="form-label">Correo Electrónico</label>
+			<input type="email" class="form-control" id="inputEmail4">
+		</div>
+			<!--find de los selectores-->		
+	<div class="col-md-4">
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+			<label class="form-check-label" for="exampleRadios1">
+			  Hombre
+			</label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+			<label class="form-check-label" for="exampleRadios2">
+			  Mujer
+			</label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+			<label class="form-check-label" for="exampleRadios3">
+			  Otro
+			</label>
+		</div>
+	</div>
+	<!--estos 2 se pueden eliminar-->
+	<div class="col-md-4">
+	<label for="validationCustom03" class="form-label">Fecha</label>
+	<input type="date" class="form-control" id="validationCustom03" required>
+	<div class="invalid-feedback">
 							Por favor entre un valor correcto.
-						</div>
-					</div>
-					<!--find de los selectores-->
-					<div class="col-md-6">
-						<label for="inputEmail4" class="form-label">Correo Electrónico</label>
-						<input type="email" class="form-control" id="inputEmail4">
-					</div>
-					<div class="col-md-6">
-						<label for="inputPassword4" class="form-label">Contraseña</label>
-						<input type="password" class="form-control" id="inputPassword4">
-					</div>
-					<div class="col-md-6">
-						<label for="inputAddress" class="form-label">Dirección</label>
-						<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-					</div>
-					<div class="col-md-6">
-						<label for="inputAddress2" class="form-label">Dirección 2</label>
-						<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-					</div>
-					<div class="col-md-6">
-						<label for="inputCity" class="form-label">Ciudad</label>
-						<input type="text" class="form-control" id="inputCity">
-					</div>
-					<div class="col-md-4">
-						<label for="inputState" class="form-label">Región</label>
-						<select id="inputState" class="form-select">
-        <option selected>Seleccione...</option>
-        <option>Región Metropolitana</option>
-        <option>Región Norte</option>
-        <option>Región Central</option>
-        <option>Región Sur</option>
-        
-      </select>
-					</div>
-					<div class="col-md-2">
-						<label for="inputZip" class="form-label">Código Postal</label>
-						<input type="text" class="form-control" id="inputZip">
-					</div>
-					<div class="col-12">
-						<div class="form-check">
-							<input class="form-check-input" type="checkbox" id="gridCheck">
-							<label class="form-check-label" for="gridCheck">
-          Marque conforme
-        </label>
-						</div>
-					</div>
-					<div class="col-12">
-						<button type="submit" class="btn btn-success">Crear Cita</button>
-					</div>
-			</form>
-			</div>
-	</main>
+	</div>
+	</div>
+		<div class="col-md-4">
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+			<label class="form-check-label" for="exampleRadios1">
+			  Adulto
+			</label>
+		  </div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+			<label class="form-check-label" for="exampleRadios2">
+			  Infante
+			</label>
+		  </div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+			<label class="form-check-label" for="exampleRadios3">
+			  Adulto mayor/discapacidad
+			</label>
+		  </div>
+		</div>
+		<div class="col-12">
+		<div class="form-check">
+			<input class="form-check-input" type="checkbox" id="gridCheck">
+			<label class="form-check-label" for="gridCheck"> Marque conforme
+        	</label>
+		</div>
+		</div>
+		<div class="col-12">
+		<button type="submit" class="btn btn-success">Crear Cita</button>
+		</div>
+		</form>
+		</div>
+</main>
 	<!-- Footer -->
-	<footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+	<footer class="text-center text-lg-start text-dark" >
 		<!-- sección de redes sociales -->
-		<section class="d-flex justify-content-between p-4 text-white" style="background-color:rgb(231, 139, 18)">
+		<section class="d-flex justify-content-between p-4 text-white color_footerCintillo">
 			<!-- a la izquierda la instrucción descriptiva-->
 			<div class="me-5">
 				<span>Siguenos por Nuestras Redes Sociales:</span>
 			</div>
-			<!-- lado izquierdo -->
-
 			<!-- al lado derecho iconos de redes sociales -->
-			<div>
-				<a href="https://blog.whatsapp.com" target="_blank" class="text-white me-4">
+			<div class="fw-bold redesColor">
+				<a href="https://blog.whatsapp.com" target="_blank" class="fw-bold redesColor">
 					<i class="bi bi-whatsapp"></i>
-				</a>
-				<a href="https://twitter.com" target="_blank" class="text-white me-4">
-					<i class="bi bi-twitter"></i>
-				</a>
-				<a href="https://www.instagram.com" target="_blank" class="text-white me-4">
-					<i class="bi bi-instagram"></i>
-				</a>
-				<a href="https://www.linkedin.com" target="_blank" class="text-white me-4">
-					<i class="bi bi-linkedin"></i>
-				</a>
-
-			</div>
+					</a>
+					<a href="https://twitter.com" target="_blank" class="fw-bold redesColor">
+						<i class="bi bi-twitter"></i>
+					</a>
+					<a href="https://www.instagram.com" target="_blank" class="fw-bold redesColor">
+						<i class="bi bi-instagram"></i>
+					</a>
+					<a href="https://www.linkedin.com" target="_blank" class="fw-bold redesColor">
+						<i class="bi bi-linkedin"></i>
+					</a>
+					</div>
 			<!-- fin del lado derecho superior del footer -->
 		</section>
 		<section class="">
@@ -174,7 +220,7 @@
 					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 						<!-- contenido -->
 						<h6 class="text-uppercase fw-bold">C.P.E.E.</h6>
-						<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+						<hr class="mb-4 mt-0 d-inline-block mx-auto" >
 						<p>
 							"Un Buen diagnostico puede salvar una vida"
 						</p>
@@ -183,43 +229,36 @@
 					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 						<!-- sección con enlaces e utilidad -->
 						<h6 class="text-uppercase fw-bold">enlaces de utilidad</h6>
-						<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+						<hr class="mb-4 mt-0 d-inline-block mx-auto" >
 						<p>
-							<a href="../paginas/crear-perfil.html" class="text-dark">Tu Perfil</a>
+							<a href="../paginas/crear-perfil.html #tucuenta" class="text-dark">Tu Perfil</a>
 						</p>
 						<p>
 							<a href="../paginas/crear-perfil.html" class="text-dark">Crear Perfil</a>
 						</p>
 						<p>
-							<a href="../paginas/servicios.html" class="text-dark">Nuestra ubicación</a>
+							<a href="../paginas/servicios.html #ubicacion" class="text-dark">Nuestra ubicación</a>
 						</p>
-						
-					</div>
-					<!-- Grid de columna -->
-
+						</div>
 					<!-- Grid de columna -->
 					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 						<h6 class="text-uppercase fw-bold">Atención:</h6>
-						<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-						<p><i class="bi bi-house-fill"></i> Av. 4 de Mayo, Edi Paulina piso 2 ofc 9. Porlamar, Edo. Nva. Esparta</p>
+						<hr class="mb-4 mt-0 d-inline-block mx-auto" >
+						<p><i class="bi bi-house-fill"></i> Av. 4 de Mayo, Ed. Paulina piso 2 ofc 9. Porlamar, Edo. Nva. Esparta</p>
 						<p><i class="bi bi-envelope-fill"></i> info@example.com</p>
 						<p><i class="bi bi-telephone-fill"></i> 0424 831 4164</p>
-
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- Copyright -->
-		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" >
 			© 2020 Copyright:
 			<p> Diseño de pagina Grupo VG </p>
 			<a class="text-dark" href="#arriba"> <i class="bi bi-arrow-up-circle"></i> (ir al comienzo)</a>
-
 		</div>
 		<!-- fin del Copyright -->
 	</footer>
-
-
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

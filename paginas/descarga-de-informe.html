@@ -18,13 +18,13 @@
 			<div>
 				<img class="logo" src="../imagenes/logo.jpeg" alt="logo del Centro Profesional de Estudios Ecográficos & Asociados ">
 				<div>
-					<h1>Descargar Informe</h1></div>
+					<h1 class="fw-bold">Descargar Informe</h1></div>
 			</div>
 		</section>
 		<!--barra de navegación-->
-		<nav class="navbar navbar-expand-lg" style="background-color:  #309722;">
+		<nav class="navbar navbar-expand-lg" >
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Menú</a>
+				<a class="navbar-brand" >Menú</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -43,13 +43,11 @@
 							<a class="nav-link negrita" href="../paginas/descarga-de-informe.html">Descargar Informe</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle negrita" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Perfil del Paciente
-                    </a>
+									<a class="nav-link dropdown-toggle negrita" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Perfil del Paciente </a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="../paginas/crear-perfil.html">Crear Perfil</a></li>
-								<li><a class="dropdown-item" href="../paginas/crear-perfil.html">Paciente Registrado</a></li>
-								<li><a class="dropdown-item" href="../paginas/crear-perfil.html">Cambiar de Perfil</a></li>
+								<li><a class="dropdown-item" href="../paginas/crear-perfil.html #tucuenta">Paciente Registrado</a></li>
+								<li><a class="dropdown-item" href="../paginas/crear-perfil.html #tucuenta">Cambiar de Perfil</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -58,33 +56,24 @@
 		</nav>
 		<!-- fin de barra de navegación-->
 	</header>
-	<main>
+<main>
 		<!--descargar informe-->
 		<section class="margen">
+			<h2 class="fw-bold margen">Descargue su informe</h2>
 			<form class="row g-3 needs-validation" novalidate>
 				<div class="col-md-4">
 					<label for="validationCustom01" class="form-label">Nombres</label>
-					<input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-					<div class="valid-feedback">
-						Looks good!
-					</div>
+					<input type="text" class="form-control" id="validationCustom01"  required>
 				</div>
 				<div class="col-md-4">
 					<label for="validationCustom02" class="form-label">Apellidos</label>
-					<input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-					<div class="valid-feedback">
-						Looks good!
-					</div>
+					<input type="text" class="form-control" id="validationCustom02"  required>
 				</div>
-				<div class="col-md-4">
-					<label for="validationCustomUsername" class="form-label">Correo Electrónico</label>
-					<div class="input-group has-validation">
-						<span class="input-group-text" id="inputGroupPrepend">@</span>
-						<input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-						<div class="invalid-feedback">
-							Please choose a username.
-						</div>
-					</div>
+				<div class="col-md-4">					
+					<label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+  					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+				<div >
+				</div>
 				</div>
 				<div class="col-md-4">
 					<label for="validationCustom04" class="form-label">Tipo de Servicio</label>
@@ -92,130 +81,142 @@
         <option selected disabled value="">Seleccione...</option>
         <option>Convencionales</option>
         <option>Especializados</option>
-      </select>
-					<div class="invalid-feedback">
-						Please select a valid state.
-					</div>
+      	</select>
+	  			<div >
+				</div>
 				</div>
 				<div class="col-md-4">
 					<label for="validationCustom03" class="form-label">Fecha</label>
 					<input type="date" class="form-control" id="validationCustom03" required>
-					<div class="invalid-feedback">
-						Please provide a valid city.
-					</div>
-
+				<div >
+				</div>
 				</div>
 				<div class="col-md-4">
 					<label for="validationCustom05" class="form-label">Codigo del Estudio</label>
 					<input type="text" class="form-control" id="validationCustom05" required>
-					<div class="invalid-feedback">
-						Please provide a valid zip.
-					</div>
+				<div >
+				</div>
 				</div>
 				<div class="col-12">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-						<label class="form-check-label" for="invalidCheck">
-          Debe aceptar los terminos antes de seguir
-        </label>
-						<div class="invalid-feedback">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+					<label class="form-check-label" for="invalidCheck">
+         					Debe aceptar los terminos antes de seguir
+        			</label>
+				<div class="invalid-feedback">
 							Debe aceptar los terminos antes de seguir.
-						</div>
-					</div>
+				</div>
+				</div>
 				</div>
 				<div class="col-12">
 					<button class="btn btn-success" type="submit">Descargar Informen</button>
 				</div>
 			</form>
+		</Section>
+		<Section class="margen2">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="border:solid 2px black ;">
+				<div class="carousel-indicators">
+				  	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				  	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				</div>
+				<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="../imagenes/ksl1.png" class="d-block w-100" alt="Doctor prepara paciente neonato para realizar prueba">
+				</div>
+				<div class="carousel-item">
+					<img src="../imagenes/ksl2.png" class="d-block w-100" alt="transductor">
+				</div>
+				<div class="carousel-item">
+					<img src="../imagenes/ksl3.png" class="d-block w-100" alt="vista lateral del equipo de ultrasonido">
+				</div>
+				<div class="carousel-item">
+					<img src="../imagenes/ksl4.png" class="d-block w-100" alt="vista frontal del equipo de ultrasonido">
+				</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Anterior</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Siguiente</span>
+				</button>
+			  </div>
 		</section>
 		<!--fin de la descarga del informe-->
-
-
-	</main>
-
+</main>
 	<!-- Footer -->
-	<footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+	<footer class="text-center text-lg-start text-dark" >
 		<!-- sección de redes sociales -->
-		<section class="d-flex justify-content-between p-4 text-white" style="background-color:rgb(231, 139, 18)">
+		<section class="d-flex justify-content-between p-4 text-white color_footerCintillo">
 			<!-- a la izquierda la instrucción descriptiva-->
 			<div class="me-5">
 				<span>Siguenos por Nuestras Redes Sociales:</span>
 			</div>
-			<!-- lado izquierdo -->
-
-			<!-- al lado derecho iconos de redes sociales -->
-			<div>
-				<a href="https://blog.whatsapp.com" target="_blank" class="text-white me-4">
+		<!-- al lado derecho iconos de redes sociales -->
+			<div class="fw-bold redesColor">
+					<a href="https://blog.whatsapp.com" target="_blank" class="fw-bold redesColor">
 					<i class="bi bi-whatsapp"></i>
-				</a>
-				<a href="https://twitter.com" target="_blank" class="text-white me-4">
+					</a>
+					<a href="https://twitter.com" target="_blank" class="fw-bold redesColor">
 					<i class="bi bi-twitter"></i>
-				</a>
-				<a href="https://www.instagram.com" target="_blank" class="text-white me-4">
+					</a>
+					<a href="https://www.instagram.com" target="_blank" class="fw-bold redesColor">
 					<i class="bi bi-instagram"></i>
-				</a>
-				<a href="https://www.linkedin.com" target="_blank" class="text-white me-4">
+					</a>
+					<a href="https://www.linkedin.com" target="_blank" class="fw-bold redesColor">
 					<i class="bi bi-linkedin"></i>
-				</a>
-
+					</a>
 			</div>
-			<!-- fin del lado derecho superior del footer -->
+		<!-- fin del lado derecho superior del footer -->
 		</section>
-		<section class="">
+		<section >
 			<div class="container text-center text-md-start mt-5">
 				<!-- Grid de linea -->
-				<div class="row mt-3">
+			<div class="row mt-3">
 					<!-- Grid de columna -->
-					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+			<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 						<!-- contenido -->
 						<h6 class="text-uppercase fw-bold">C.P.E.E.</h6>
-						<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-						<p>
-							"Un Buen diagnostico puede salvar una vida"
-						</p>
-					</div>
+						<hr class="mb-4 mt-0 d-inline-block mx-auto" >
+						<p>	"Un Buen diagnostico puede salvar una vida"</p>
+			</div>
 					<!-- Grid de columna -->
-					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+			<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 						<!-- sección con enlaces e utilidad -->
 						<h6 class="text-uppercase fw-bold">enlaces de utilidad</h6>
-						<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+						<hr class="mb-4 mt-0 d-inline-block mx-auto" >
 						<p>
-							<a href="../paginas/crear-perfil.html" class="text-dark">Tu Perfil</a>
+						<a href="../paginas/crear-perfil.html #tucuenta" class="text-dark">Tu Perfil</a>
 						</p>
 						<p>
-							<a href="../paginas/crear-perfil.html" class="text-dark">Crear Perfil</a>
+						<a href="../paginas/crear-perfil.html" class="text-dark">Crear Perfil</a>
 						</p>
 						<p>
-							<a href="../paginas/servicios.html" class="text-dark">Nuestra ubicación</a>
+						<a href="../paginas/servicios.html #ubicacion" class="text-dark">Nuestra ubicación</a>
 						</p>
-						
-					</div>
+			</div>
 					<!-- Grid de columna -->
-
-					<!-- Grid de columna -->
-					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 						<h6 class="text-uppercase fw-bold">Atención:</h6>
-						<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-						<p><i class="bi bi-house-fill"></i> Av. 4 de Mayo, Edi Paulina piso 2 ofc 9. Porlamar, Edo. Nva. Esparta</p>
+						<hr class="mb-4 mt-0 d-inline-block mx-auto" >
+						<p><i class="bi bi-house-fill"></i> Av. 4 de Mayo, Ed. Paulina piso 2 ofc 9. Porlamar, Edo. Nva. Esparta</p>
 						<p><i class="bi bi-envelope-fill"></i> info@example.com</p>
 						<p><i class="bi bi-telephone-fill"></i> 0424 831 4164</p>
-
-					</div>
-				</div>
+			</div>
+			</div>
 			</div>
 		</section>
 		<!-- Copyright -->
-		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" >
 			© 2020 Copyright:
 			<p> Diseño de pagina Grupo VG </p>
 			<a class="text-dark" href="#arriba"> <i class="bi bi-arrow-up-circle"></i> (ir al comienzo)</a>
-
-		</div>
+			</div>
 		<!-- fin del Copyright -->
 	</footer>
-	<!-- Footer -->
-
-
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

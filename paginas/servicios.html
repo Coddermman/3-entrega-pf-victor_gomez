@@ -9,20 +9,21 @@
 	<title>C.P.E.E./Servicios</title>
 	<!-- CSS only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-</head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <link rel="stylesheet" href="../css/style.css">
+</head>
+
 <body>
 	<header id="arriba" class="color_header">
 		<div>
 			<img class="logo" src="../imagenes/logo.jpeg" alt="logo del Centro Profesional de Estudios Ecográficos & Asociados ">
 		</div>
 		<div>
-			<h1>Servicios Ecográficos</h1></div>
+			<h1 class="fw-bold" >Servicios Ecográficos</h1></div>
 		<!--barra de navegación-->
-		<nav class="navbar navbar-expand-lg" style="background-color:  #309722;">
+		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Menú</a>
+				<a class="navbar-brand" >Menú</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -41,13 +42,11 @@
 							<a class="nav-link negrita" href="../paginas/descarga-de-informe.html">Descargar Informe</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle negrita" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Perfil del Paciente
-                    </a>
+							<a class="nav-link dropdown-toggle negrita" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil del Paciente</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="../paginas/crear-perfil.html">Crear Perfil</a></li>
-								<li><a class="dropdown-item" href="../paginas/crear-perfil.html">Paciente Registrado</a></li>
-								<li><a class="dropdown-item" href="../paginas/crear-perfil.html">Cambiar de Perfil</a></li>
+								<li><a class="dropdown-item" href="../paginas/crear-perfil.html #tucuenta">Paciente Registrado</a></li>
+								<li><a class="dropdown-item" href="../paginas/crear-perfil.html #tucuenta">Cambiar de Perfil</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -56,103 +55,77 @@
 		</nav>
 		<!-- fin de barra de navegación-->
 	</header>
-	<main>
-
+	<main class="img-fluid">
 		<!--lista de servicios-->
-
-		<div class="margen">
-
-			<p>
-				<a class="btn btn-success" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Convencionales</a>
-				<button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Especializados</button>
-
-			</p>
-			<div class="row">
-				<div class="col ">
-					<div class="collapse multi-collapse" id="multiCollapseExample1">
-						<div class="card card-body">
-							<!--lista de servicios convencionales-->
-							<select class="form-select " aria-label="Default select example">
-            <option selected>Despliegue el Menú</option>
-            <option value="1">Abdominal</option>
-            <option value="2">Pelvico</option>
-            <option value="3">Mamario</option>
-            <option value="4">Renal</option>
-            <option value="5">Prostático</option>
-            <option value="6">Tiroidéo</option>
-            <option value="7">Transvaginal</option>
-            <option value="8">Partes Blandas</option>
-          </select>
-
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="collapse multi-collapse" id="multiCollapseExample2">
-						<div class="card card-body">
-							<select class="form-select" aria-label="Default select example">
-            <option selected>Despliegue el menú</option>
-            <option value="1">Transfontanelar</option>
-            <option value="2">Músculo-esquelético</option>
-            <option value="3">Transrectal</option>
-            <option value="4">Articulaciones</option>
-            <option value="5">Doppler Renal</option>
-            <option value="6">Testicular</option>
-            <option value="7">Ecografía Ocular</option>
-            <option value="8">Boyden Ecográfico</option>
-            <option value="9">Elastografía Abdominal</option>
-            <option value="10">Barrido Extendido</option>
-          </select>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--fin de la lista de servicios-->
-		<Section>
-			<div class="container text-center">
+		<Section class="margen4">
+			<h2 class="fw-bold">Tipos de servicios</h2>
+			<div class="container text-left">
 				<div class="row">
-					<div class="col-md-6 ">
+					<div class="col-md-3 margen4">
+						<ul class="list-group" >
+							<li class="list-group-item colorServicios fw-bolder" aria-current="true">Convencionales</li>
+							<li class="list-group-item">Abdominal</li>
+							<li class="list-group-item">Pelvico</li>
+							<li class="list-group-item">Mamario</li>
+							<li class="list-group-item">Renal</li>
+							<li class="list-group-item">Prostático</li>
+							<li class="list-group-item">Tiroidéo</li>
+							<li class="list-group-item">Transvaginal</li>
+							<li class="list-group-item">Partes Blandas</li>
+						  </ul>
+						</div>
+						  <div class="col-md-3 margen4 ">
+							<ul class="list-group">
+								<li class="list-group-item colorServicios fw-bolder" aria-current="true">Especializados</li>
+								<li class="list-group-item">Transfontanelar</li>
+								<li class="list-group-item">Músculo-esquelético</li>
+								<li class="list-group-item">Transrectal</li>
+								<li class="list-group-item">Articulaciones</li>
+								<li class="list-group-item">Doppler Renal</li>
+								<li class="list-group-item">Testicular</li>
+								<li class="list-group-item">Ecografía Ocular</li>
+								<li class="list-group-item">Boyden Ecográfico</li>
+								<li class="list-group-item">Elastografía Abdominal</li>
+								<li class="list-group-item">Barrido Extendido</li>
+							  </ul>
+							</div>
+						</div>
+					</div>
+		<!--fin de la lista de servicios-->
+					<div class="container text-center ">
+				<div class="row">
+					<div class="col-md-4 ">
 						<h2>C.E.P.I. al día</h2>
 						<div><iframe width="560" height="315" class="box" src="https://www.youtube.com/embed/rsEOerirTdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-4 ">
 						<h2> Nuestra ubicación</h2>
-						<div> <iframe class="box" id="ubicación" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426178.01925132354!2d-70.92881744989552!3d-33.43586654372446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967cc55f50593ad5%3A0xbcfa9a2cd82a7288!2sEl%20Rancho%20del%20Ch%C3%A9!5e0!3m2!1ses!2scl!4v1657588979411!5m2!1ses!2scl" width="450" height="300"></iframe> </div>
+						<div> <iframe style="border:solid 2px rgb(231, 139, 18) ;" class="box" id="ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15667.76407307517!2d-63.84762580000001!3d10.967824700000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c318eb0e9de0217%3A0x76b8300e95df43de!2sCentro%20Profesional%20de%20Estudios%20Ecogr%C3%A1ficos%20(C.P.E.E.)!5e0!3m2!1ses!2scl!4v1663613866843!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
 					</div>
-
 				</div>
-
-
-
 		</Section>
 	</main>
-
 	<!-- Footer -->
-	<footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
 		<!-- sección de redes sociales -->
-		<section class="d-flex justify-content-between p-4 text-white" style="background-color:rgb(231, 139, 18)">
+		<section class="d-flex justify-content-between p-4 text-white color_footerCintillo">
 			<!-- a la izquierda la instrucción descriptiva-->
 			<div class="me-5">
 				<span>Siguenos por Nuestras Redes Sociales:</span>
 			</div>
-			<!-- lado izquierdo -->
-
 			<!-- al lado derecho iconos de redes sociales -->
-			<div>
-				<a href="https://blog.whatsapp.com" target="_blank" class="text-white me-4">
+			<div class="fw-bold redesColor">
+					<a href="https://blog.whatsapp.com" target="_blank" class="fw-bold redesColor">
 					<i class="bi bi-whatsapp"></i>
-				</a>
-				<a href="https://twitter.com" target="_blank" class="text-white me-4">
+					</a>
+					<a href="https://twitter.com" target="_blank" class="fw-bold redesColor">
 					<i class="bi bi-twitter"></i>
-				</a>
-				<a href="https://www.instagram.com" target="_blank" class="text-white me-4">
+					</a>
+					<a href="https://www.instagram.com" target="_blank" class="fw-bold redesColor">
 					<i class="bi bi-instagram"></i>
-				</a>
-				<a href="https://www.linkedin.com" target="_blank" class="text-white me-4">
+					</a>
+					<a href="https://www.linkedin.com" target="_blank" class="fw-bold redesColor">
 					<i class="bi bi-linkedin"></i>
-				</a>
-
+					</a>
 			</div>
 			<!-- fin del lado derecho superior del footer -->
 		</section>
@@ -164,37 +137,31 @@
 					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 						<!-- contenido -->
 						<h6 class="text-uppercase fw-bold">C.P.E.E.</h6>
-						<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-						<p>
-							"Un Buen diagnostico puede salvar una vida"
-						</p>
+						<hr class="mb-4 mt-0 d-inline-block mx-auto" >
+						<p>"Un Buen diagnostico puede salvar una vida"</p>
 					</div>
 					<!-- Grid de columna -->
 					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 						<!-- sección con enlaces e utilidad -->
 						<h6 class="text-uppercase fw-bold">enlaces de utilidad</h6>
-						<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+						<hr class="mb-4 mt-0 d-inline-block mx-auto" >
 						<p>
-							<a href="../paginas/crear-perfil.html" class="text-dark">Tu Perfil</a>
+							<a href="../paginas/crear-perfil.html #tucuenta" class="text-dark">Tu Perfil</a>
 						</p>
 						<p>
 							<a href="../paginas/crear-perfil.html" class="text-dark">Crear Perfil</a>
 						</p>
 						<p>
-							<a href="../paginas/servicios.html" class="text-dark">Nuestra ubicación</a>
+							<a href="../paginas/servicios.html #ubicacion" class="text-dark">Nuestra ubicación</a>
 						</p>
-						
 					</div>
-					<!-- Grid de columna -->
-
 					<!-- Grid de columna -->
 					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 						<h6 class="text-uppercase fw-bold">Atención:</h6>
-						<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+						<hr class="mb-4 mt-0 d-inline-block mx-auto" >
 						<p><i class="bi bi-house-fill"></i> Av. 4 de Mayo, Edi Paulina piso 2 ofc 9. Porlamar, Edo. Nva. Esparta</p>
 						<p><i class="bi bi-envelope-fill"></i> info@example.com</p>
 						<p><i class="bi bi-telephone-fill"></i> 0424 831 4164</p>
-
 					</div>
 				</div>
 			</div>
@@ -204,11 +171,9 @@
 			© 2020 Copyright:
 			<p> Diseño de pagina Grupo VG </p>
 			<a class="text-dark" href="#arriba"> <i class="bi bi-arrow-up-circle"></i> (ir al comienzo)</a>
-
 		</div>
 		<!-- fin del Copyright -->
 	</footer>
-
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
