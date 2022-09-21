@@ -4,7 +4,7 @@
     font-family: sans-serif
 
 }
-
+@import "mediaQuery";
 @import url('https://fonts.googleapis.com/css2? family= Istok+Web:ital,wght@0,400;0,700;1,700 & display=swap');
 @import"variables";
 
@@ -217,9 +217,12 @@ opacity: -100;
 }
 .mantenimiento{
     background-image: url("../imagenes/mantenimiento.jpg");
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
-    background-color: rgb(162, 140, 240);
+ background-position: center center;
+ background-repeat: no-repeat;
+  background-size: cover;
+ height:100vh;
+  background-color: #FFF;
+ text-align: center;
+ color: #000;
+ font-family: "Times New Roman", Times, serif;
 }

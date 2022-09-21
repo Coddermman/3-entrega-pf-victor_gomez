@@ -6,6 +6,18 @@
   font-family: sans-serif;
 }
 
+/** toda el sitio se basa en bootstrap y estas son los breakpoints que se emplean, 
+el cual es llamado desde el scss como partial, en caso de que se amerite la implementación de algún cambio **/
+/*@media (min-width: 576px) { ... }
+
+// dispositivos de tamaño mediano (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// dispositivos grandes (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// dispositivos extra grandes, sobre los 1200px (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }*/
 /*********archivo de variables****/
 /*colores de la marca**/
 header .logo {
@@ -213,10 +225,14 @@ header nav ul a:hover {
 
 .mantenimiento {
   background-image: url("../imagenes/mantenimiento.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vh;
-  background-color: rgb(162, 140, 240);
+  height: 100vh;
+  background-color: #FFF;
+  text-align: center;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /*# sourceMappingURL=style.css.map */
